@@ -1,0 +1,37 @@
+# Ignore the node_modules directory, which may be used in some frontend projects
+node_modules/
+
+# Ignore the target directory, where Cargo builds your project
+target/
+
+# Ignore Cargo.lock, typically not ignored for libraries but may be for binaries
+Cargo.lock
+
+# Ignore the Trunk dist directory
+dist/
+
+# Ignore backup files from editors
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore all binaries and executables
+*.exe
+*.out
+*.o
+*.d
+
+# Ignore MacOS specific files
+.DS_Store
+
+# Ignore Thumbs.db (Windows)
+Thumbs.db
+
+# Ignore Rust/Cargo specific directories and files
+.cargo/
+**/*.rs.bk
+
+# Ignore environment files
+.env
