@@ -1,4 +1,6 @@
 use std::fmt::Display;
+use std::clone::Clone;
+use std::marker::Copy;
 
 pub struct Hello {
     name: String,
@@ -13,3 +15,9 @@ impl Display for Hello {
         write!(f, "{}", self.name)
     }
 }
+
+pub(crate) const SIZE: usize = 192;
+
+#[derive(Clone,Copy)]
+pub(crate) struct DictWrap(pub(crate) [char; SIZE]);
+
